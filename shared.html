@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Free Anchor - Ledgercn</title>
+    <link rel="icon" type="image/GIF" href="img/logo.jpg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta name="description" content="账中 锚点服务">
+    <meta name="keywords" content="账中 钱包 微信 锚点 资产 anchor asset wallet Ledger cn stellar XLM Lumens 恒星币 流明币 设计 总账 账户 恒星货币 STR 在线">
+
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css"/>-->
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="css/font-awesome.min.css"/>-->
+
+    <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+    <script src="js/commom.js"></script>
+    <script src="js/getUrlParam.js"></script>
+    <script src="js/shared.js"></script>
+</head>
+<body>
+    <script>
+        mLanguage = getUrlParam('l');
+        if (mLanguage != 'cn') {
+            mLanguage = 'en';
+        }
+    </script>
+    <div class="panel panel-primary text-center">
+        <h2 id="id_shared_header_h2">..</h2>
+    </div>
+    <div class="panel panel-body">
+        <div class="jumbotron">
+            <div class="container">
+                <h4 id="id_addr_badge" style="word-wrap: break-word; word-break: break-all;">..</h4>
+                <h4 id="id_code_badge" style="word-wrap: break-word; word-break: break-all;">..</h4>
+                <h4 id="id_nickname_h4" style="word-wrap: break-word; word-break: break-all;"></h4>
+            </div>
+    </div>
+    <div class="panel panel-primary">
+        <div class="panel panel-heading text-center">
+            <h3 id="id_scan_qrcode_header_cap">...</h3>
+        </div>
+        <div class="panel panel-body text-center">
+            <div id="qrcode">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        SharedController.initController()
+    </script>
+</body>
+</html>

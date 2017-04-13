@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Free Anchor - Ledgercn</title>
+    <link rel="icon" type="image/GIF" href="img/logo.jpg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta name="description" content="账中 锚点服务">
+    <meta name="keywords" content="账中 钱包 微信 锚点 资产 anchor asset wallet Ledger cn stellar XLM Lumens 恒星币 流明币 设计 总账 账户 恒星货币 STR 在线">
+
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css"/>-->
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="css/font-awesome.min.css"/>-->
+
+    <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+    <script src="js/commom.js"></script>
+    <script src="js/getUrlParam.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <script>
+        mLanguage = getUrlParam('l');
+        if (mLanguage != 'cn') {
+            mLanguage = 'en';
+        }
+    </script>
+    <div class="container">
+        <!-- 说明 -->
+        <div class="panel-primary">
+            <div class="panel panel-heading">
+                <h4>
+                    <i class="btn" onclick="ShowerHideBody('id_free_anchor_memo_head_icon','id_free_anchor_memo_body_div')">
+                        <i class="fa fa-caret-down" id="id_free_anchor_memo_head_icon">&nbsp;&nbsp;</i>
+                        <i id="id_free_anchor_memo_head_cap"></i>
+                    </i>
+                    <i class="btn pull-right" onclick="parent.location = 'http://ledgercn.com'"><i class="fa fa-home fa-2x"></i></i>
+                </h4>
+            </div>
+            <div class="panel-body" id="id_free_anchor_memo_body_div">
+                <div class="panel panel-success">
+                    <div class="panel panel-heading">
+                        <h5 id="id_free_anchor_memo_body_cap"></h5>
+                    </div>
+                    <div class="panel panel-body">
+                        <h4>
+                            <i class="btn" onclick="ShowerHideBody('id_famb_step1_icon','id_famb_step1_memo')">
+                                <i class="fa fa-caret-right" id="id_famb_step1_icon">&nbsp;&nbsp;</i>
+                                <i id="id_famb_step1_cap"></i>
+                            </i>
+                        </h4>
+                        <p id="id_famb_step1_memo" style="display: none;"></p>
+
+                        <h4>
+                            <i class="btn" onclick="ShowerHideBody('id_famb_step2_icon','id_famb_step2_memo')">
+                                <i class="fa fa-caret-right" id="id_famb_step2_icon">&nbsp;&nbsp;</i>
+                                <i id="id_famb_step2_cap"></i>
+                            </i>
+                        </h4>
+                        <p id="id_famb_step2_memo" style="display: none;"></p>
+
+                        <h4>
+                            <i class="btn" onclick="ShowerHideBody('id_famb_step3_icon','id_famb_step_div')">
+                                <i class="fa fa-caret-right" id="id_famb_step3_icon">&nbsp;&nbsp;</i>
+                                <i id="id_famb_step3_cap"></i>
+                            </i>
+                        </h4>
+                        <div id="id_famb_step_div" style="display: none;">
+                            <p id="id_famb_step3_memo" style="display: none;"></p>
+                            <h4>&nbsp;
+                                <i class="btn" onclick="ShowerHideBody('id_famb_step3_1_icon','id_famb_step3_1_memo')">
+                                    <i class="fa fa-caret-right" id="id_famb_step3_1_icon">&nbsp;&nbsp;</i>
+                                    <i id="id_famb_step3_1_cap"></i>
+                                </i>
+                            </h4>
+                            <p id="id_famb_step3_1_memo" style="display: none;"></p>
+
+                            <h4>&nbsp;
+                                <i class="btn" onclick="ShowerHideBody('id_famb_step3_2_icon','id_famb_step3_2_memo')">
+                                    <i class="fa fa-caret-right" id="id_famb_step3_2_icon">&nbsp;&nbsp;</i>
+                                    <i id="id_famb_step3_2_cap"></i>
+                                </i>
+                            </h4>
+                            <p id="id_famb_step3_2_memo" style="display: none;"></p>
+
+                            <h4>&nbsp;
+                                <i class="btn" onclick="ShowerHideBody('id_famb_step3_3_icon','id_famb_step3_3_memo')">
+                                    <i class="fa fa-caret-right" id="id_famb_step3_3_icon">&nbsp;&nbsp;</i>
+                                    <i id="id_famb_step3_3_cap"></i>
+                                </i>
+                            </h4>
+                            <p id="id_famb_step3_3_memo" style="display: none;"></p>
+
+                            <h4>&nbsp;
+                                <i class="btn" onclick="ShowerHideBody('id_famb_step3_4_icon','id_famb_step3_4_memo')">
+                                    <i class="fa fa-caret-right" id="id_famb_step3_4_icon">&nbsp;&nbsp;</i>
+                                    <i id="id_famb_step3_4_cap"></i>
+                                </i>
+                            </h4>
+                            <p id="id_famb_step3_4_memo" style="display: none;"></p>
+
+                            <h4>&nbsp;
+                                <i class="btn" onclick="ShowerHideBody('id_famb_step3_5_icon','id_famb_step3_5_memo')">
+                                    <i class="fa fa-caret-right" id="id_famb_step3_5_icon">&nbsp;&nbsp;</i>
+                                    <i id="id_famb_step3_5_cap"></i>
+                                </i>
+                            </h4>
+                            <p id="id_famb_step3_5_memo" style="display: none;"></p>
+                        </div>
+
+                        <h4>
+                            <i class="btn" onclick="ShowerHideBody('id_famb_step4_icon','id_famb_step4_div')">
+                                <i class="fa fa-caret-right" id="id_famb_step4_icon">&nbsp;&nbsp;</i>
+                                <i id="id_famb_step4_cap"></i>
+                            </i>
+                        </h4>
+                        <div id="id_famb_step4_div" style="display: none;">
+                            <p id="id_famb_step4_memo"></p>
+                            <div id="id_qrcode_div" class="panel text-center"><div id="qrcode"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- 说明 end-->
+
+        <!-- 查询 -->
+        <div class="panel-primary" style="margin-top: 10px;">
+            <div class="panel panel-heading">
+                <h4>
+                    <i class="btn" onclick="ShowerHideBody('id_free_anchor_query_head_icon','id_free_anchor_query_body_div')">
+                        <i class="fa fa-caret-down" id="id_free_anchor_query_head_icon">&nbsp;&nbsp;</i>
+                        <i id="id_free_anchor_query_head_cap"></i>
+                    </i>
+                    <i class="btn pull-right" onclick="parent.location = 'http://ledgercn.com'"><i class="fa fa-home fa-2x"></i></i>
+                </h4>
+            </div>
+            <div class="panel-body" id="id_free_anchor_query_body_div">
+                <dl class="dl-horizontal">
+                    <dt style="margin-top: 7px;">
+                        <i class="fa fa-globe"></i>&nbsp;&nbsp;
+                        <label id="id_query_input_cap">..</label>
+                    </dt>
+                    <dd>
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-warning" type="button" onclick="IndexController.queryBtnClick();"><i class="fa fa-search"></i></button>
+                            </span>
+                                <input id="id_query_input_text" type="text" class="form-control"/>
+                            <span class="input-group-btn">
+                                <button class="btn btn-danger" type="button" onclick="clearInput('id_query_input_text')"><i class="fa fa-close"></i></button>
+                            </span>
+                        </div>
+                    </dd>
+                    <dd class="text-left">
+                        <i class="fa fa-angle-double-right" style="color: red;"></i> &nbsp;
+                        <i id="id_query_input_memo" style="color: #999902;"></i>
+                    </dd>
+                </dl>
+                <div id="id_query_result_div">
+                    <div class="container text-center">
+                        <div id="id_query_result_waiting_div">
+                            <i class="fa fa-spinner fa-pulse fa-fw fa-2x"></i>
+                        </div>
+                        <div>
+                            <pre id="id_query_context_cap"></pre>
+                        </div>
+                    </div>
+                    <div style="margin-top: 10px">
+                        <table class="table table-hover table-condensed">
+                            <tbody id="id_query_result_table_tbody">
+                            <tr>
+                                <td rowspan="5" class="text-center" style="min-width: 50px;vertical-align: middle;background-color: #EFFFFF;word-wrap: break-word; word-break: break-all;">1</td>
+                                <td style="min-width: 50px;vertical-align: middle;background-color: #EFFFFF;word-wrap: break-word; word-break: break-all;">GCYNTLFBAXWIWWTROR77CUHST7IF5W3MOUIZRQYKZVLPKC3REJ4MNVQY</td>
+                            </tr>
+                            <tr>
+                                <td style="min-width: 50px;vertical-align: middle;background-color: #EFFFFF;word-wrap: break-word; word-break: break-all;">ABC</td>
+                            </tr>
+                            <tr>
+                                <td style="min-width: 50px;vertical-align: middle;background-color: #EFFFFF;word-wrap: break-word; word-break: break-all;">walker</td>
+                            </tr>
+                            <tr>
+                                <td style="min-width: 50px;vertical-align: middle;background-color: #EFFFFF;word-wrap: break-word; word-break: break-all;">2017-05-11T18:42:56+08:00</td>
+                            </tr>
+                            <tr>
+                                <td style="min-width: 50px;vertical-align: middle;background-color: #EFFFFF;word-wrap: break-word; word-break: break-all;">f04492a49442de3379a948b3a267c9cd8e3704944312e4913497e3a4a6272181</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- 查询 end-->
+    </div>
+
+    <script>
+        IndexController.initController();
+    </script>
+</body>
+</html>
